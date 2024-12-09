@@ -1,0 +1,643 @@
+
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" class="preloader--page">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+      <link rel="shortcut icon" href="theme/avenex/assets/images/favicon.ico">
+      <link rel="stylesheet" href="theme/avenex/assets/css/style.min.css?v=6">
+      <title>Stackle</title>
+      <!-- Google tag (gtag.js) -->
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-ND84V5D813');
+      </script>
+      <style type="text/css">
+         .preloader--page {
+         overflow: hidden;
+         }
+         .preloader--page .wrapper {
+         opacity: 0;
+         }
+         #preloader {
+         display: flex;
+         align-items: center;
+         position: fixed;
+         z-index: 99999;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: #090909;
+         padding: 16px;
+         transition: all 0.3s ease-out;
+         }
+         #preloader:before {
+         content: '';
+         position: absolute;
+         top: 8px;
+         left: 8px;
+         width: calc(100% - 16px);
+         height: calc(100% - 16px);
+         border: 2px solid rgba(var(--white-rgb), 0.1);
+         z-index: -1;
+         }
+         .pre-content {
+         display: flex;
+         align-items: flex-end;
+         justify-content: space-between;
+         position: relative;
+         max-width: 1232px;
+         width: 100%;
+         padding: 0 16px;
+         margin: 0 auto;
+         }
+         .pre-content .block {
+         display: flex;
+         flex-direction: column;
+         gap: 40px
+         }
+         .pre-content .logo {
+         max-width: 140px;
+         }
+         .pre-content .loading {
+         display: block;
+         font-family: 'ConthraxSb', sans-serif;
+         font-size: 18px;
+         color: rgba(255, 255, 255, 0.2);
+         text-transform: uppercase;
+         clip-path: inset(0 2ch 0 0);
+         animation: l 2s steps(4) infinite;
+         }
+         .pre-content .percentage .data {
+         display: block;
+         font-family: 'ConthraxSb', sans-serif;
+         font-size: 55px;
+         line-height: 1;
+         color: #ffffff;
+         text-transform: uppercase;
+         margin-bottom: -20px;
+         }
+         @media screen and (max-width: 1300px){
+         .pre-content .percentage .data {
+         font-size: 24px;
+         margin: 0;
+         }
+         }
+         .pre-progress {
+         position: absolute;
+         left: 50%;
+         top: 42px;
+         width: 100vw;
+         height: 3px;
+         background-color: #000000;
+         transform: translateX(-50%);
+         }
+         .pre-progress .progress{
+         position: absolute;
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 0%;
+         background: linear-gradient(135deg, var(--orange-1) 0%,var(--red-1) 100%);
+         transition: 1s;
+         }
+         .pre-progress .progress.active {
+         width: 100%;
+         }
+         .preloader-hide {
+         opacity: 0;
+         z-index: -1;
+         }
+         @keyframes l {
+         to {
+         clip-path: inset(0 -1ch 0 0)
+         }
+         }
+      </style>
+      <script>
+         window.addEventListener('load', function () {
+           var preloader = document.getElementById("preloader");
+           var page = document.querySelector("html");
+           var progress  = document.getElementById("progress");
+         
+           progress.classList.add('active');
+         
+           setTimeout(function() {
+             preloader.classList.add('preloader-hide');
+             page.classList.remove('preloader--page');
+           }, 1000);
+         
+           setTimeout(function() {
+             document.querySelector(".preloader-hide").remove();
+           }, 2000);
+         });
+      </script>
+   </head>
+   <body class="body">
+      <header id="header" class="header">
+         <div class="header-decor"></div>
+         <div class="header_content">
+            <div class="burger">
+               <button type="button" class="btn-menu" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+            <div class="logo-block">
+               <a href="index.html" class="logo">
+               <img src="theme/avenex/assets/images/shinex.png" alt="logo">
+               </a>
+               <span class="logo-text">Your Personal Crypto Reactor</span>
+            </div>
+            <div class="nav-block">
+               <nav class="nav">
+                  <a href="index.html" class="nav-link ">MAINPAGE</a>
+                  <a href="about.html" class="nav-link ">ABOUT Stackle</a>                                             </a>
+                  <a href="investor.html" class="nav-link active">FOR INVESTORS</a>
+                  <a href="partners.html" class="nav-link ">FOR PARTNERS</a>
+                  <a href="faq.html" class="nav-link ">FAQ</a>
+                  <div class="list-soc">
+                     <a href="https://t.me/+SzrXsYr2XWViYjBk" class="soc-link">Telegram</a>
+                  </div>
+				  <!-- <div class="list-soc">
+                     <a href="https://www.youtube.com/@Stackle-LTD" class="soc-link">YouTube</a>
+                  </div> -->
+               </nav>
+            </div>
+            <div class="button-block">
+			                  <a href="user-log.html" class="base-cta outline-cta-light"><span>Sign In</span></a>
+               <a href="user-reg.html" class="base-cta filled-cta shadow-cta"><span>Sign Up</span></a>
+			               </div>
+            <div class="button-mob">
+			                  <a href="user-log.html" class="auth-mob"><i class="icon-login"></i></a>
+			               </div>
+         </div>
+      </header><style type="text/css">
+  .preloader--page {
+    overflow: hidden;
+  }
+
+  .preloader--page .wrapper {
+    opacity: 0;
+  }
+
+  #preloader {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #090909;
+    padding: 16px;
+    transition: all 0.3s ease-out;
+  }
+
+  #preloader:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    border: 2px solid rgba(var(--white-rgb), 0.1);
+    z-index: -1;
+  }
+
+  .pre-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1232px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  .pre-content .block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+  }
+
+  .pre-content .logo {
+    max-width: 140px;
+  }
+
+  .pre-content .loading {
+    display: block;
+    font-family: 'ConthraxSb', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    clip-path: inset(0 2ch 0 0);
+    animation: l 2s steps(4) infinite;
+  }
+
+  .pre-content .percentage .data {
+    display: block;
+    font-family: 'ConthraxSb', sans-serif;
+    font-size: 55px;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+  }
+
+  @media screen and (max-width: 1300px){
+    .pre-content .percentage .data {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+  
+  .pre-progress {
+    position: absolute;
+    left: 50%;
+    top: 42px;
+    width: 100vw;
+    height: 3px;
+    background-color: #000000;
+    transform: translateX(-50%);
+  }
+  
+  .pre-progress .progress{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(135deg, var(--orange-1) 0%,var(--red-1) 100%);
+    transition: 1s;
+  }
+
+  .pre-progress .progress.active {
+    width: 100%;
+  }
+
+  .preloader-hide {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  @keyframes l {
+    to {
+      clip-path: inset(0 -1ch 0 0)
+    }
+  }
+</style>
+
+<script>
+  window.addEventListener('load', function () {
+    var preloader = document.getElementById("preloader");
+    var page = document.querySelector("html");
+    var progress  = document.getElementById("progress");
+
+    progress.classList.add('active');
+
+    setTimeout(function() {
+      preloader.classList.add('preloader-hide');
+      page.classList.remove('preloader--page');
+    }, 1000);
+
+    setTimeout(function() {
+      document.querySelector(".preloader-hide").remove();
+    }, 2000);
+  });
+</script>
+<div class="wrapper">
+<div class="content">
+<section class="main-sc">
+   <div class="container">
+      <div class="block">
+         <div class="head-row">
+            <h1 class="title">Buckle up, we're taking off!</h1>
+         </div>
+         <div class="cnt-row">
+            <div class="inv-upper">
+               <div class="box-num">
+                  <span class="num">from 50%</span>
+               </div>
+               <div class="box-label">
+                  <span class="label">in 3 days*</span>
+               </div>
+            </div>
+            <!-- <div class="inv-lower">
+               <span class="data data-color">For 25</span>
+               <span class="data">calendar days*</span>
+            </div> -->
+         </div>
+         <div class="cta-row">
+		                <a href="user-reg.html" class="base-cta filled-cta shadow-cta">
+            <span>Create an account</span>
+            </a>
+			         </div>
+         <div class="footnote-row">
+            <p class="text">* Up to 100% profit on your deposit in 10 days</p>
+         </div>
+      </div>
+   </div>
+   <div class="video-bg">
+      <video class="video" playsinline autoplay muted loop poster="theme/avenex/assets/images/media/main-inv-bg.png">
+         <source src="theme/avenex/assets/static/video/rocket-video.mp4" type="video/mp4">
+      </video>
+   </div>
+</section>
+<section class="full-sc how-sc">
+   <div class="container">
+      <div class="head-row-gl">
+         <h2 class="title">How it works?</h2>
+         <h3 class="sub-title">Everything complicated in simple language</h3>
+         <p class="text">
+            If we describe all the processes performed by our platform,
+            it will take a whole volume of&nbsp;documentation and it will be
+            very boring. We will try to explain it to you in three sentences.
+         </p>
+      </div>
+      <div class="rows">
+         <div class="block def-decor">
+            <div class="step">
+               <span class="data">01</span>
+            </div>
+            <h3 class="title">Stackle investment assistant terminal</h3>
+            <p class="text">Stackle analyzes a huge array of data from the current cryptocurrency market and selects
+               the most highly profitable and liquid instruments
+            </p>
+            <div class="decor-el"></div>
+         </div>
+         <div class="path-block path-up">
+            <div class="path-ctn">
+               <div class="path-upper">
+                  <p class="title">Analysis and decision making</p>
+                  <p class="sub-title">Neural networks (Enigma, Overmind, Watchdog)</p>
+               </div>
+               <div class="path-marker"></div>
+            </div>
+         </div>
+         <div class="block def-decor">
+            <div class="step">
+               <span class="data">02</span>
+            </div>
+            <h3 class="title">dex exchanges and high-yield staking&nbsp;pools</h3>
+            <p class="text">The system evaluates the Risk/reward of the instruments selected by the neural network and
+               opens transactions on various DEX exchanges and staking pools
+            </p>
+            <div class="decor-el"></div>
+         </div>
+         <div class="path-block path-down">
+            <div class="path-ctn">
+               <div class="path-upper">
+                  <p class="title">exit the deal and take profit</p>
+                  <p class="sub-title">Classifier algorithm Polynomial - SVC</p>
+               </div>
+               <div class="path-marker"></div>
+            </div>
+         </div>
+         <div class="block def-decor">
+            <div class="step">
+               <span class="data">03</span>
+            </div>
+            <h3 class="title">investor profit</h3>
+            <p class="text">After reaching the required level of P/L, orders are closed and profits are distributed
+               among platform clients and Stackle receives its commission
+            </p>
+            <div class="decor-el"></div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- <section class="full-sc calculate-sc">
+   <div class="container">
+      <div class="head-row-gl">
+         <h2 class="title">Calculate your future</h2>
+      </div>
+      <div class="def-decor calculate">
+         <div class="fun-row">
+            <fieldset class="input-row">
+               <div class="input-group">
+                  <input id="amount" type="text" class="input" value="500">
+               </div>
+               <label for="input-val" class="label">Enter investment amount</label>
+            </fieldset>
+            <fieldset class="select-row">
+               <div id="select2" class="select-group">
+                  <div class="select">
+                     <div class="selected">
+                        <div class="option">
+                           <div class="currency">
+                              <i class="icon-tether"></i>
+                              <span class="name">TETHER</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="select-list wrap-scroll">
+                        <ul class="list">
+                           <li class="item">
+                              <div class="option">
+                                 <div class="currency">
+                                    <i class="icon-tether"></i>
+                                    <span class="name">TETHER</span>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </fieldset>
+         </div>
+         <div class="result-row">
+            <div class="string string-d">
+               <p class="title">Dialy profit</p>
+               <div class="num-wrap">
+                  <span class="data" id="dialy_profit"></span>
+                  <sub class="sub">USD</sub>
+               </div>
+            </div>
+            <div class="string string-t">
+               <p class="title">Total profit *</p>
+               <div class="num-wrap">
+                  <span class="data" id="total_profit"></span>
+                  <sub class="sub">USD</sub>
+               </div>
+               <p class="sub-title">* Deposit included in payments</p>
+            </div>
+         </div>
+         <div class="btn-row">
+                     <a href="user-reg.html" class="base-cta filled-cta shadow-cta"><span>Create an account</span></a>
+		          </div>
+      </div>
+   </div>
+</section> -->
+<section class="full-sc reactor-sc">
+   <div class="container">
+      <div class="desc-sc">
+         <div class="head-sc">
+            <h2 class="title">your crypto never sleeps</h2>
+            <h3 class="sub-title">The profit reactor is running 24/7</h3>
+         </div>
+         <div class="desc-ctn">
+            <p class="text">Artificial intelligence does not need rest, so your cryptocurrency works around the clock! And brings stable and high income for you every day.  </p>
+         </div>
+         <div class="cta-row">
+            <a href="investor.html" class="base-cta filled-cta shadow-cta"><span>For Investors</span></a>
+         </div>
+      </div>
+      <div class="video-block">
+         <video class="video" playsinline autoplay muted loop poster="theme/avenex/assets/images/media/reactor-media.png">
+            <source src="theme/avenex/assets/static/video/reactor-video.mp4" type="video/mp4">
+         </video>
+      </div>
+   </div>
+   <div class="container no-flex">
+      <div class="lower">
+         <div class="up-row">
+            <div class="block">
+               <div class="count-wrap">
+                  <span class="num">$</span>
+                  <span class="num">1,000,000+</span>
+               </div>
+               <span class="num transparent">$1,000,000+</span>
+            </div>
+            <div class="block">
+               <p class="text">already invested in the Stackle platform</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="what-sc">
+   <div class="container">
+      <div class="holder">
+         <div class="video-block">
+            <video class="video" playsinline autoplay muted loop poster="theme/avenex/assets/images/media/what-media.png">
+               <source src="theme/avenex/assets/static/video/usdt-video.mp4" type="video/mp4">
+            </video>
+         </div>
+         <div class="desc">
+            <p class="up-title">what you waiting for?</p>
+            <h2 class="title">Launch your own <span>crypto reactor</span></h2>
+         </div>
+      </div>
+      <div class="cta-row">
+                  <a href="user-reg.html" class="base-cta filled-cta shadow-cta"><span>Create an account</span></a>
+		       </div>
+   </div>
+</section>
+<script>
+    function calc(f) {
+      let amount = $('#amount').val();
+
+      let dialyProfit = (amount / 100 * 5).toFixed(2);
+      let totalProfit = (amount / 100 * 5 * 25).toFixed(2);
+
+      $('#dialy_profit').html(dialyProfit);
+      $('#total_profit').html(totalProfit);
+    }
+
+    $(function() {
+      calc();
+    });
+
+    $('#amount').on('keyup', function() {
+      calc();
+    });
+
+    </script>
+<footer class="footer">
+   <div class="footer-decor"></div>
+   <div class="footer_content">
+      <div class="logo-block">
+         <a href="index.html" class="logo">
+            <picture class="media">
+               <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/images/shinex.png" alt="media">
+            </picture>
+         </a>
+         <span class="logo-text">Your Personal Crypto Reactor</span>
+      </div>
+      <div class="footer-nav">
+         <div class="col">
+            <h3 class="title">MAIN MENU</h3>
+            <div class="list">
+               <a href="index.html" class="nav-link">MAINPAGE</a>
+               <a href="about.html" class="nav-link">ABOUT Stackle</a>
+               <a href="investor.html" class="nav-link">FOR INVESTORS</a>
+               <a href="partners.html" class="nav-link">FOR PARTNERS</a>
+               <a href="faq.html" class="nav-link">FAQ</a>
+               <!-- <a href="sup.html" class="nav-link">FEEDBACK</a> -->
+            </div>
+         </div>
+         <div class="col">
+            <h3 class="title">Legal documents</h3>
+            <div class="list">
+               <a href="policy.html" class="nav-link">Privacy policy</a>
+               <a href="terms.html" class="nav-link">User agreement</a>
+            </div>
+         </div>
+         <!-- <div class="col">
+            <h3 class="title">Social Networks</h3>
+            <div class="list-soc">
+               <a href="https://t.me/+SzrXsYr2XWViYjBk" class="soc-link">
+               <i class="icon-telegram"></i>
+               Telegram Channel
+               </a>
+            </div>
+         </div> -->
+      </div>
+      <div class="button-block">
+                        <a href="user-log.html" class="base-cta outline-cta-light"><span>Sign In</span></a>
+               <a href="user-reg.html" class="base-cta filled-cta shadow-cta"><span>Sign Up</span></a>
+			         </div>
+      <div class="info-block">
+         <span class="date">All rights reserved. © 2024</span>
+      </div>
+      <div class="media-footer">
+         <picture class="media">
+            <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/images/media/media-footer.png" alt="media">
+         </picture>
+      </div>
+   </div>
+</footer>
+</div>
+</div>
+<div class="overlay"></div>
+<!--End Language-->
+<div class="an_bar soc-bar">
+   <div class="list-soc">
+      <a href="https://t.me/+SzrXsYr2XWViYjBk" class="soc-link">
+      <i class="icon-telegram"></i>
+      Telegram
+      </a>
+	 <!--  <a href="https://www.youtube.com/@Stackle-LTD" class="soc-link" target="_blank">
+      <img src="theme/avenex/assets/images/youtube.png">
+      YouTube
+      </a> -->
+   </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+<script src="theme/avenex/assets/js/gsap.min.js" defer="defer"></script>
+<script src="theme/avenex/assets/js/ScrollTrigger.min.js" defer="defer"></script>
+<script src="theme/avenex/assets/js/ScrollSmoother.min.js" defer="defer"></script>
+<script src="theme/avenex/assets/js/app.js" defer="defer"></script>
+<script src="theme/avenex/assets/js/animation.js" defer="defer"></script>
+<script src="theme/avenex/assets/js/lazy-media.js" defer="defer"></script>
+<!-- HelloPreload -->
+<div id="preloader">
+   <div class="pre-content">
+      <div class="block">
+         <img class="logo" src="theme/avenex/assets/images/shinex.png" alt="logo">
+         <span class="loading">Loading . . .</span>
+      </div>
+      <div class="pre-progress">
+         <div class="progress" id="progress"></div>
+      </div>
+   </div>
+</div>
+<!-- HelloPreload -->
+</body>
+</html>

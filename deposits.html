@@ -1,229 +1,391 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-      <link rel="shortcut icon" href="theme/avenex/assets/in/images/favicon.ico">
-      <link rel="stylesheet" href="theme/avenex/assets/in/css/style.min.css">
-      <title>Stackle</title>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'G-ND84V5D813');
-      </script>
-   </head>
-   <body class="body">
-      <div class="active flowmap-deformation-wrapper" data-bg="theme/avenex/assets/in/images/page-bg.jpg" data-bg-width="1920" data-bg-height="1000">
-         <canvas></canvas>
-      </div>
-      <header class="header">
-         <div class="container">
-            <div class="burger">
-               <button type="button" class="btn-menu" aria-label="Menu"><span></span><span></span><span></span></button>
-            </div>
-            <div class="header_wrap">
-               <a href="" class="logo">
-               <img src="theme/avenex/assets/in/images/shinex.png" alt="logo">
-               </a>
-               <span class="logo-text">Your Personal Crypto Reactor</span>
-            </div>
-            <div class="header_holder">
-               <div class="btn-wrap">
-                  <a href="user/settings" class="btn">
-                  <i class="icon-cog"></i>
-                  </a>
-                  <a href="user/exit" class="btn">
-                  <i class="icon-exit"></i>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </header>
-      <main class="main">
-      <aside class="sidebar">
-         <div class="mobile-row">
-            <div class="btn-wrap">
-               <a href="user/settings" class="btn">
-               <i class="icon-cog"></i>
-               </a>
-               <a href="user/exit" class="btn">
-               <i class="icon-exit"></i>
-               </a>
-            </div>
-         </div>
-         <div class="user-wrap">
-            <div class="icon">
-               <span class="icon-rank">te</span>
-            </div>
-            <div class="info-user">
-               <div class="upper">
-                  <span class="data">Welcome,</span>
-                  <span class="label" style="display: none;"></span>
-               </div>
-               <div class="lower">
-                  <span class="name">asfasf</span>
-               </div>
-            </div>
-         </div>
-         <div class="mobile-fer-link">
-            <div class="ref-wrap">
-               <div class="ctn-block">
-                  <p class="title">Referral link</p>
-                  <div class="clone">
-                     <input onclick="this.select();" type="text" class="input-clone" value="https://stackle.tech/?ref=asfasf" readonly="readonly">
-                     <span id="RefLink" class="hide-link" style="display: none;">https://stackle.tech/?ref=asfasf</span>
-                  </div>
-               </div>
-               <div class="btn-block">
-                  <button class="btn copy-link" onclick="copyToClipboard('#RefLink')">
-                  <i class="icon-papers"></i>
-                  </button>
-                  <button class="btn btn-qr outline-cta">
-                  <i class="icon-qr-code"></i>
-                  </button>
-               </div>
-            </div>
-         </div>
-         <nav class="nav">
-          
-       
-            <div class="item">
-               <a href="user" class="nav-link ">
-               <i class="icon-dashboard"></i>
-               <span>Dashboard</span>
-               </a>
-            </div>
-            <div class="item">
-               <a href="user/deposits" class="nav-link active">
-               <i class="icon-vault"></i>
-               <span>My deposits</span>
-               </a>
-            </div>
-         <div class="item">
-               <a href="user/reinvest" class="nav-link ">
-               <i class="icon-equalizer"></i>
-               <span>Reinvest</span>
-               </a>
-            </div>
-            <div class="item">
-               <a href="user/earnings" class="nav-link ">
-               <i class="icon-credit-card"></i>
-               <span>History</span>
-               </a>
-            </div>
-            <div class="item">
-               <a href="#" class="nav-link drop-link">
-               <i class="icon-customer"></i>
-               <span>Affiliate program</span>
-               <i class="icon-right-open ic-arrow"></i>
-               </a>
-               <div class="sub-nav">
-                  <div class="sub-item">
-                     <a href="user/referals" class="sub-link">
-                     <i class="icon-right-open"></i>
-                     Referrals
-                     </a>
-                  </div>
-                  <div class="sub-item">
-                     <a href="user/promo" class="sub-link">
-                     <i class="icon-right-open"></i>
-                     Promo
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </nav>
-         <div class="news-wrap">
-            <div class="head-row">
-               <h2 class="title">Platform updates </h2>
-            </div>
-            <div class="list">
-               <div class="item">
-                  <a href="#" class="news-link">
-                  <span class="data">4 December 2024, 12:20</span>
-                  <span class="title">Welcome to the Stackle platform!</span>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </aside>
-<div class="content">
-   <div class="head-page">
-      <div class="full-name">Deposits</div>
-      <div class="title-wrap">
-         <h1 class="title">Deposits</h1>
-         <ul class="list">
-            <li class="item">
-               <a href="user" class="link-p">Backoffice</a>
-            </li>
-            <li class="item">
-               <a href="#" class="link-p">Deposits</a>
-            </li>
-         </ul>
-      </div>
-      <div class="ref-wrap">
-         <div class="ctn-block">
-            <p class="title">Referral link</p>
-            <div class="clone">
-               <input onclick="this.select();" type="text" class="input-clone" value="https://stackle.tech/?ref=asfasf" readonly="readonly">
-               <span id="RefLink" class="hide-link" style="display: none;">https://stackle.tech/?ref=asfasf</span>
-            </div>
-         </div>
-         <div class="btn-block">
-            <button class="btn copy-link" onclick="copyToClipboard('#RefLink')">
-            <i class="icon-papers"></i>
-            </button>
-         </div>
-      </div>
-   </div>
-   <div class="head-section">
-      <div class="block">
-         <h2 class="title">My accounts</h2>
-      </div>
-   </div>
-   <div class="bills-rows default-indentation">
-   </div>
-   <div class="deposit-history filled-decor">
-      <div class="head-section">
-         <div class="block">
-            <h2 class="title">Deposit History</h2>
-         </div>
-      </div>
-      <div class="table-row">
-         <table class="table">
-            <tr class="tr-head">
-               <th>Date</th>
-               <th>Payment system</th>
-               <th>Accruals</th>
-            <th>Profit</th>
-               <th class="flex-end">Amount</th>
-            </tr>
-                  </table>
-      </div>
-   </div>
-</div>
-</main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="theme/avenex/assets/in/images/favicon.ico"
+    />
+    <link rel="stylesheet" href="theme/avenex/assets/in/css/style.min.css" />
+    <title>Stackle</title>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<div class="overlay"></div>
-<!--End Language-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" crossorigin="anonymous"></script>
-<script src="theme/avenex/assets/in/js/flowmap-effect.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-<script src="theme/avenex/assets/in/js/overlay-scrollbars.min.js"></script>
-<script src="theme/avenex/assets/in/js/tooltip.bundle.min.js"></script>
-<script src="theme/avenex/assets/in/js/app.js"></script>
-<script>
-   function copyToClipboard(element) {
-       var $temp = $("<input>");
-       $("body").append($temp);
-       $temp.val($(element).text()).select();
-       document.execCommand("copy");
-       $temp.remove();
-   }
-</script>
-</body>
+      gtag("config", "G-ND84V5D813");
+    </script>
+  </head>
+  <body class="body">
+    <div
+      class="active flowmap-deformation-wrapper"
+      data-bg="theme/avenex/assets/in/images/page-bg.jpg"
+      data-bg-width="1920"
+      data-bg-height="1000"
+    >
+      <canvas></canvas>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="burger">
+          <button type="button" class="btn-menu" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <div class="header_wrap">
+          <a href="" class="logo">
+            <img src="theme/avenex/assets/in/images/shinex.png" alt="logo" />
+          </a>
+          <span class="logo-text">Your Personal Crypto Reactor</span>
+        </div>
+        <div class="header_holder">
+          <div class="btn-wrap">
+            <a href="user/settings" class="btn">
+              <i class="icon-cog"></i>
+            </a>
+            <a href="user/exit" class="btn">
+              <i class="icon-exit"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <aside class="sidebar">
+        <div class="mobile-row">
+          <div class="btn-wrap">
+            <a href="user/settings" class="btn">
+              <i class="icon-cog"></i>
+            </a>
+            <a href="user/exit" class="btn">
+              <i class="icon-exit"></i>
+            </a>
+          </div>
+        </div>
+        <div class="user-wrap">
+          <div class="icon">
+            <span class="icon-rank">te</span>
+          </div>
+          <div class="info-user">
+            <div class="upper">
+              <span class="data">Welcome,</span>
+              <span class="label" style="display: none"></span>
+            </div>
+            <div class="lower">
+              <span class="name">asfasf</span>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-fer-link">
+          <div class="ref-wrap">
+            <div class="ctn-block">
+              <p class="title">Referral link</p>
+              <div class="clone">
+                <input
+                  onclick="this.select();"
+                  type="text"
+                  class="input-clone"
+                  value="https://stackle.tech/?ref=asfasf"
+                  readonly="readonly"
+                />
+                <span id="RefLink" class="hide-link" style="display: none"
+                  >https://stackle.tech/?ref=asfasf</span
+                >
+              </div>
+            </div>
+            <div class="btn-block">
+              <button
+                class="btn copy-link"
+                onclick="copyToClipboard('#RefLink')"
+              >
+                <i class="icon-papers"></i>
+              </button>
+              <button class="btn btn-qr outline-cta">
+                <i class="icon-qr-code"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <nav class="nav">
+          <div class="item">
+            <a href="user" class="nav-link">
+              <i class="icon-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </div>
+          <div class="item">
+            <a href="user/deposits" class="nav-link active">
+              <i class="icon-vault"></i>
+              <span>My deposits</span>
+            </a>
+          </div>
+          <div class="item">
+            <a href="user/reinvest" class="nav-link">
+              <i class="icon-equalizer"></i>
+              <span>Reinvest</span>
+            </a>
+          </div>
+          <div class="item">
+            <a href="user/earnings" class="nav-link">
+              <i class="icon-credit-card"></i>
+              <span>History</span>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" class="nav-link drop-link">
+              <i class="icon-customer"></i>
+              <span>Affiliate program</span>
+              <i class="icon-right-open ic-arrow"></i>
+            </a>
+            <div class="sub-nav">
+              <div class="sub-item">
+                <a href="user/referals" class="sub-link">
+                  <i class="icon-right-open"></i>
+                  Referrals
+                </a>
+              </div>
+              <div class="sub-item">
+                <a href="user/promo" class="sub-link">
+                  <i class="icon-right-open"></i>
+                  Promo
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="news-wrap">
+          <div class="head-row">
+            <h2 class="title">Platform updates</h2>
+          </div>
+          <div class="list">
+            <div class="item">
+              <a href="#" class="news-link">
+                <span class="data">4 December 2024, 12:20</span>
+                <span class="title">Welcome to the Stackle platform!</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="content">
+        <div class="head-page">
+          <div class="full-name">Deposits</div>
+          <div class="title-wrap">
+            <h1 class="title">Deposits</h1>
+            <ul class="list">
+              <li class="item">
+                <a href="user" class="link-p">Backoffice</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link-p">Deposits</a>
+              </li>
+            </ul>
+          </div>
+          <div class="ref-wrap">
+            <div class="ctn-block">
+              <p class="title">Referral link</p>
+              <div class="clone">
+                <input
+                  onclick="this.select();"
+                  type="text"
+                  class="input-clone"
+                  value="https://stackle.tech/?ref=asfasf"
+                  readonly="readonly"
+                />
+                <span id="RefLink" class="hide-link" style="display: none"
+                  >https://stackle.tech/?ref=asfasf</span
+                >
+              </div>
+            </div>
+            <div class="btn-block">
+              <button
+                class="btn copy-link"
+                onclick="copyToClipboard('#RefLink')"
+              >
+                <i class="icon-papers"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="head-section">
+          <div class="block">
+            <h2 class="title">My accounts</h2>
+          </div>
+        </div>
+        <div class="bills-rows default-indentation"></div>
+        <div class="deposit-history filled-decor">
+          <div class="head-section">
+            <div class="block">
+              <h2 class="title">Deposit History</h2>
+            </div>
+          </div>
+          <div class="table-row" style="display: none">
+            <table class="table">
+              <tr class="tr-head">
+                <th>Date</th>
+                <th>Payment system</th>
+                <th>Accruals</th>
+                <th>Profit</th>
+                <th class="flex-end">Amount</th>
+              </tr>
+            </table>
+          </div>
+          <div class="table-main">
+            <div class="tm-card">
+              <button class="tm-card-btn ff-Con relevant">
+                <p>5</p>
+                <span>$</span>
+              </button>
+              <div class="tm-card-cont">
+                <p class="ff-Con tm-card-cont__pr">+50%</p>
+                <span class="tm-card-cont__t"
+                  >Период работы инвестиции: <br />
+                  <span class="ff-Con">3 дня</span>
+                </span>
+                <span class="tm-card-cont__t">До конца:</span>
+                <div class="tm-card-timer ff-Con">
+                  <p class="days">2</p>
+                  <span>:</span>
+                  <p class="hours">18</p>
+                  <span>:</span>
+                  <p class="minutes">45</p>
+                  <span>:</span>
+                  <p class="seconds">16</p>
+                </div>
+                <div class="tm-card-load">
+                  <p class="ff-Con">0%</p>
+                  <span style="width: 10%"></span>
+                </div>
+                <div class="tm-card-profit relevant">
+                  <span>Прибыль:</span>
+                  <p class="ff-Con">123,75$</p>
+                </div>
+              </div>
+            </div>
+            <div class="tm-card">
+              <button class="tm-card-btn ff-Con relevant">
+                <p>5</p>
+                <span>$</span>
+              </button>
+              <div class="tm-card-cont">
+                <p class="ff-Con tm-card-cont__pr">+50%</p>
+                <span class="tm-card-cont__t"
+                  >Период работы инвестиции: <br />
+                  <span class="ff-Con">3 дня</span>
+                </span>
+                <span class="tm-card-cont__t">До конца:</span>
+                <div class="tm-card-timer ff-Con">
+                  <p class="days">2</p>
+                  <span>:</span>
+                  <p class="hours">18</p>
+                  <span>:</span>
+                  <p class="minutes">45</p>
+                  <span>:</span>
+                  <p class="seconds">16</p>
+                </div>
+                <div class="tm-card-load">
+                  <p class="ff-Con">0%</p>
+                  <span style="width: 10%"></span>
+                </div>
+                <div class="tm-card-profit relevant">
+                  <span>Прибыль:</span>
+                  <p class="ff-Con">123,75$</p>
+                </div>
+              </div>
+            </div>
+            <div class="tm-card">
+              <button class="tm-card-btn ff-Con relevant">
+                <p>5</p>
+                <span>$</span>
+              </button>
+              <div class="tm-card-cont">
+                <p class="ff-Con tm-card-cont__pr">+50%</p>
+                <span class="tm-card-cont__t"
+                  >Период работы инвестиции: <br />
+                  <span class="ff-Con">3 дня</span>
+                </span>
+                <span class="tm-card-cont__t">До конца:</span>
+                <div class="tm-card-timer ff-Con">
+                  <p class="days">2</p>
+                  <span>:</span>
+                  <p class="hours">18</p>
+                  <span>:</span>
+                  <p class="minutes">45</p>
+                  <span>:</span>
+                  <p class="seconds">16</p>
+                </div>
+                <div class="tm-card-load">
+                  <p class="ff-Con">0%</p>
+                  <span style="width: 10%"></span>
+                </div>
+                <div class="tm-card-profit relevant">
+                  <span>Прибыль:</span>
+                  <p class="ff-Con">123,75$</p>
+                </div>
+              </div>
+            </div>
+            <div class="tm-card">
+              <button class="tm-card-btn ff-Con relevant">
+                <p>5</p>
+                <span>$</span>
+              </button>
+              <div class="tm-card-cont">
+                <p class="ff-Con tm-card-cont__pr">+50%</p>
+                <span class="tm-card-cont__t"
+                  >Период работы инвестиции: <br />
+                  <span class="ff-Con">3 дня</span>
+                </span>
+                <span class="tm-card-cont__t">До конца:</span>
+                <div class="tm-card-timer ff-Con">
+                  <p class="days">2</p>
+                  <span>:</span>
+                  <p class="hours">18</p>
+                  <span>:</span>
+                  <p class="minutes">45</p>
+                  <span>:</span>
+                  <p class="seconds">16</p>
+                </div>
+                <div class="tm-card-load">
+                  <p class="ff-Con">0%</p>
+                  <span style="width: 10%"></span>
+                </div>
+                <div class="tm-card-profit relevant">
+                  <span>Прибыль:</span>
+                  <p class="ff-Con">123,75$</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="overlay"></div>
+    <!--End Language-->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="theme/avenex/assets/in/js/flowmap-effect.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="theme/avenex/assets/in/js/overlay-scrollbars.min.js"></script>
+    <script src="theme/avenex/assets/in/js/tooltip.bundle.min.js"></script>
+    <script src="theme/avenex/assets/in/js/app.js"></script>
+    <script>
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+    </script>
+  </body>
 </html>

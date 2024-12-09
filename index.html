@@ -1,0 +1,618 @@
+
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" class="preloader--page">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+      <link rel="shortcut icon" href="theme/avenex/assets/images/favicon.ico">
+      <link rel="stylesheet" href="theme/avenex/assets/css/style.min.css?v=6">
+      <title>Stackle</title>
+      <!-- Google tag (gtag.js) -->
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-ND84V5D813');
+      </script>
+      <style type="text/css">
+         .preloader--page {
+         overflow: hidden;
+         }
+         .preloader--page .wrapper {
+         opacity: 0;
+         }
+         #preloader {
+         display: flex;
+         align-items: center;
+         position: fixed;
+         z-index: 99999;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: #090909;
+         padding: 16px;
+         transition: all 0.3s ease-out;
+         }
+         #preloader:before {
+         content: '';
+         position: absolute;
+         top: 8px;
+         left: 8px;
+         width: calc(100% - 16px);
+         height: calc(100% - 16px);
+         border: 2px solid rgba(var(--white-rgb), 0.1);
+         z-index: -1;
+         }
+         .pre-content {
+         display: flex;
+         align-items: flex-end;
+         justify-content: space-between;
+         position: relative;
+         max-width: 1232px;
+         width: 100%;
+         padding: 0 16px;
+         margin: 0 auto;
+         }
+         .pre-content .block {
+         display: flex;
+         flex-direction: column;
+         gap: 40px
+         }
+         .pre-content .logo {
+         max-width: 140px;
+         }
+         .pre-content .loading {
+         display: block;
+         font-family: 'ConthraxSb', sans-serif;
+         font-size: 18px;
+         color: rgba(255, 255, 255, 0.2);
+         text-transform: uppercase;
+         clip-path: inset(0 2ch 0 0);
+         animation: l 2s steps(4) infinite;
+         }
+         .pre-content .percentage .data {
+         display: block;
+         font-family: 'ConthraxSb', sans-serif;
+         font-size: 55px;
+         line-height: 1;
+         color: #ffffff;
+         text-transform: uppercase;
+         margin-bottom: -20px;
+         }
+         @media screen and (max-width: 1300px){
+         .pre-content .percentage .data {
+         font-size: 24px;
+         margin: 0;
+         }
+         }
+         .pre-progress {
+         position: absolute;
+         left: 50%;
+         top: 42px;
+         width: 100vw;
+         height: 3px;
+         background-color: #000000;
+         transform: translateX(-50%);
+         }
+         .pre-progress .progress{
+         position: absolute;
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 0%;
+         background: linear-gradient(135deg, var(--orange-1) 0%,var(--red-1) 100%);
+         transition: 1s;
+         }
+         .pre-progress .progress.active {
+         width: 100%;
+         }
+         .preloader-hide {
+         opacity: 0;
+         z-index: -1;
+         }
+         @keyframes l {
+         to {
+         clip-path: inset(0 -1ch 0 0)
+         }
+         }
+      </style>
+      <script>
+         window.addEventListener('load', function () {
+           var preloader = document.getElementById("preloader");
+           var page = document.querySelector("html");
+           var progress  = document.getElementById("progress");
+         
+           progress.classList.add('active');
+         
+           setTimeout(function() {
+             preloader.classList.add('preloader-hide');
+             page.classList.remove('preloader--page');
+           }, 1000);
+         
+           setTimeout(function() {
+             document.querySelector(".preloader-hide").remove();
+           }, 2000);
+         });
+      </script>
+   </head>
+   <body class="body">
+      <header id="header" class="header">
+         <div class="header-decor"></div>
+         <div class="header_content">
+            <div class="burger">
+               <button type="button" class="btn-menu" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+            <div class="logo-block">
+               <a href="index.html" class="logo">
+               <img src="theme/avenex/assets/images/shinex.png" alt="logo">
+               </a>
+               <span class="logo-text">Your Personal Crypto Reactor</span>
+            </div>
+            <div class="nav-block">
+               <nav class="nav">
+                  <a href="index.html" class="nav-link active">MAINPAGE</a>
+                  <a href="about.html" class="nav-link ">ABOUT Stackle</a>                                             </a>
+                  <a href="investor.html" class="nav-link ">FOR INVESTORS</a>
+                  <a href="partners.html" class="nav-link ">FOR PARTNERS</a>
+                  <a href="faq.html" class="nav-link ">FAQ</a>
+                  <div class="list-soc">
+                     <a href="https://t.me/+SzrXsYr2XWViYjBk" class="soc-link">Telegram</a>
+                  </div>
+				  <!-- <div class="list-soc">
+                     <a href="https://www.youtube.com/@Stackle-LTD" class="soc-link">YouTube</a>
+                  </div> -->
+               </nav>
+            </div>
+            <div class="button-block">
+			   			   <a href="user.html" class="base-cta outline-cta-light"><span>Account</span></a>
+			               </div>
+            <div class="button-mob">
+			   			   <a href="user.html" class="auth-mob"><i class="icon-login"></i></a>
+			               </div>
+         </div>
+      </header>
+<div class="wrapper">
+<div class="content">
+<section class="main-sc">
+   <div class="container">
+      <div class="block">
+         <div class="head-row">
+            <h1 class="title">Launch your own&nbsp;crypto reactor</h1>
+            <p class="sub-title">Welcome to Stackle</p>
+         </div>
+         <div class="cnt-row">
+            <p class="text">Make your cryptocurrency work at the speed of light with the innovative Stackle platform </p>
+         </div>
+         <div class="cta-row">
+		    			<a href="user.html" class="base-cta filled-cta shadow-cta">
+            <span>Account</span>
+            </a>
+			         </div>
+      </div>
+   </div>
+   <div class="video-bg">
+      <video class="video" playsinline autoplay muted loop poster="images/media/main-bg.png">
+         <source src="theme/avenex/assets/static/video/main-video.mp4" type="video/mp4">
+      </video>
+   </div>
+</section>
+<section class="full-sc security-sc">
+   <div class="container">
+      <div class="head-sc">
+         <h2 class="title">SECURE<br> INVESTMENTS</h2>
+         <h3 class="sub-title">IN BRIGHT FUTURE</h3>
+      </div>
+      <div class="rows">
+         <div class="def-decor block">
+            <picture class="media">
+               <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/images/icons/cpu.png" width="44" height="44" alt="media">
+            </picture>
+            <h3 class="title">own analytical neural network Stackle</h3>
+            <p class="text">Thanks to our own <span>Stackle</span>, the entire complex of analytical and trading operations occurs almost instantly.</p>
+            <div class="decor-el"></div>
+         </div>
+         <div class="def-decor block">
+            <picture class="media">
+               <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/images/icons/exchange.png" width="44" height="44" alt="media">
+            </picture>
+            <h3 class="title">Own nodes and crypto gateways</h3>
+            <p class="text">Own nodes and crypto gateways provide the perfect <span>GAS/Transaction Speed ​​ratio</span></p>
+            <div class="decor-el"></div>
+         </div>
+         <div class="def-decor block">
+            <picture class="media">
+               <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/images/icons/bot.png" width="44" height="44" alt="media">
+            </picture>
+            <h3 class="title">Diversification with our own MEV bots</h3>
+            <p class="text"><span>The Stackle</span> platform provides additional income to investors through trading MEV bots (Sandwich attacks)</p>
+            <div class="decor-el"></div>
+         </div>
+      </div>
+      <div class="footnote">
+         <p class="text">Find out how the Stackle platform allows you to earn stable profits every day</p>
+      </div>
+      <div class="lower">
+         <div class="cta-row">
+            <a href="about.html" class="base-cta filled-cta shadow-cta"><span>Learn more about the platform</span></a>
+         </div>
+      </div>
+      <div class="video-bg">
+         <video class="video" playsinline autoplay muted loop poster="theme/avenex/assets/images/media/security-bg.png">
+            <source src="theme/avenex/assets/static/video/security-video.mp4" type="video/mp4">
+         </video>
+      </div>
+   </div>
+</section>
+<section class="full-sc reactor-sc">
+   <div class="container">
+      <div class="desc-sc">
+         <div class="head-sc">
+            <h2 class="title">your crypto never sleeps</h2>
+            <h3 class="sub-title">The profit reactor is running 24/7</h3>
+         </div>
+         <div class="desc-ctn">
+            <p class="text">Artificial intelligence does not need rest, so your cryptocurrency works around the clock! And brings stable and high income for you every day.  </p>
+         </div>
+         <div class="cta-row">
+            <a href="investor.html" class="base-cta filled-cta shadow-cta"><span>For Investors</span></a>
+         </div>
+      </div>
+      <div class="video-block">
+         <video class="video" playsinline autoplay muted loop poster="theme/avenex/assets/images/media/reactor-media.png">
+            <source src="theme/avenex/assets/static/video/reactor-video.mp4" type="video/mp4">
+         </video>
+      </div>
+   </div>
+   <div class="container no-flex">
+      <div class="lower">
+         <div class="up-row">
+            <div class="block">
+               <div class="count-wrap">
+                  <span class="num">$</span>
+                  <span class="num">1,000,000+</span>
+               </div>
+               <span class="num transparent">$1,000,000+</span>
+            </div>
+            <div class="block">
+               <p class="text">already invested in the Stackle platform</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="full-sc partners-sc">
+   <div class="container">
+      <div class="upper">
+         <div class="number">
+            <span class="data">10,000+</span>
+            <span class="data transparent">10,000+</span>
+         </div>
+         <div class="block">
+            <h2 class="title">Partners<br> around the world</h2>
+         </div>
+      </div>
+      <div class="rows">
+         <div class="desc-sc">
+            <div class="head-sc">
+               <h3 class="sub-title">Already making money with Stackle</h3>
+            </div>
+            <div class="desc-ctn">
+               <p class="text">Find out how our partners earn hundreds of thousands of dollars with the Stackle affiliate program</p>
+            </div>
+            <div class="cta-row">
+               <a href="partners.html" class="base-cta filled-cta shadow-cta"><span>For Partners</span></a>
+            </div>
+            <!-- <div class="top-partners">
+               <div class="title-block">
+                  <h3 class="title">Weekly top 5 partners</h3>
+               </div>
+               <div class="top-list">
+			                     <div class="item def-decor">
+                     <div class="box">
+                        <p class="title">partner</p>
+                        <span class="name">miltoncripto2</span>
+                     </div>
+                     <div class="box">
+                        <p class="title">DEPOSIT</p>
+                        <span class="num">$300.00</span>
+                     </div>
+                  </div>
+			                     <div class="item def-decor">
+                     <div class="box">
+                        <p class="title">partner</p>
+                        <span class="name">guzmandixter</span>
+                     </div>
+                     <div class="box">
+                        <p class="title">DEPOSIT</p>
+                        <span class="num">$41.50</span>
+                     </div>
+                  </div>
+			                     <div class="item def-decor">
+                     <div class="box">
+                        <p class="title">partner</p>
+                        <span class="name">Danaram</span>
+                     </div>
+                     <div class="box">
+                        <p class="title">DEPOSIT</p>
+                        <span class="num">$50.00</span>
+                     </div>
+                  </div>
+			                     <div class="item def-decor">
+                     <div class="box">
+                        <p class="title">partner</p>
+                        <span class="name">SuperMario25</span>
+                     </div>
+                     <div class="box">
+                        <p class="title">DEPOSIT</p>
+                        <span class="num">$104.00</span>
+                     </div>
+                  </div>
+			                     <div class="item def-decor">
+                     <div class="box">
+                        <p class="title">partner</p>
+                        <span class="name">Zesty55</span>
+                     </div>
+                     <div class="box">
+                        <p class="title">DEPOSIT</p>
+                        <span class="num">$41.88</span>
+                     </div>
+                  </div>
+			                  </div>
+            </div> -->
+         </div>
+         <picture class="media">
+            <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/images/media/planet.png" width="835" height="608" alt="preview">
+         </picture>
+      </div>
+   </div>
+</section>
+<section class="full-sc start-sc">
+   <div class="container">
+      <div class="head-sc">
+         <h2 class="title">Start your journey<br> with Stackle</h2>
+         <h3 class="sub-title">in 3 easy steps</h3>
+      </div>
+      <div class="rows">
+         <div class="def-decor block">
+            <div class="step">
+               <span class="data">01</span>
+            </div>
+            <h3 class="title">create a free account</h3>
+            <p class="text">Creating an account with Stackle will not take you more than 3 minutes of your time</p>
+            <div class="decor-el"></div>
+         </div>
+         <div class="def-decor block">
+            <div class="step">
+               <span class="data">02</span>
+            </div>
+            <h3 class="title">charge your crypto reactor in a convenient way</h3>
+            <p class="text">Create a new deposit with Stackle in any way convenient for you</p>
+            <div class="decor-el"></div>
+         </div>
+         <div class="def-decor block">
+            <div class="step">
+               <span class="data">03</span>
+            </div>
+            <h3 class="title">Start receiving stable daily profit</h3>
+            <p class="text">Income on your deposit will start accruing from the first minute of its creation</p>
+            <div class="decor-el"></div>
+         </div>
+         <picture class="media-bg">
+            <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/images/media/rocket-bg.png" alt="preview">
+         </picture>
+      </div>
+      <div class="pay-rows">
+         <div class="block">
+            <p class="title">charge your crypto reactor WITH:</p>
+         </div>
+         <div class="holder" style="flex-wrap: wrap;">
+            <div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/tron_trc20.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">TETHER</span>
+               </div>
+            </div>
+            <div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/bitcoin.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">BITCOIN</span>
+               </div>
+            </div>
+            <div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/ethereum.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">ETHEREUM</span>
+               </div>
+            </div>
+            <div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/tron.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">TRON</span>
+               </div>
+            </div>
+            <div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/litecoin.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">LITECOIN</span>
+               </div>
+            </div>
+            <div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/ripple.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">XRP</span>
+               </div>
+            </div>
+			<div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/dogecoin.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">Dogecoin</span>
+               </div>
+            </div>
+			<div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/binancecoin.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">BNB</span>
+               </div>
+            </div>
+			<div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/solana.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">Solana</span>
+               </div>
+            </div>
+			<div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/matic.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">Matic</span>
+               </div>
+            </div>
+			<div class="box">
+               <picture class="media">
+                  <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/ps/toncoin.svg" width="32" height="32" alt="preview">
+               </picture>
+               <div class="desc">
+                  <span class="name">TON</span>
+               </div>
+            </div>
+			
+         </div>
+      </div>
+      <div class="cta-rows">
+         		 <a href="user.html" class="base-cta filled-cta shadow-cta"><span>Account</span></a>
+		       </div>
+   </div>
+</section>
+
+<section class="what-sc">
+   <div class="container">
+      <div class="holder">
+         <div class="video-block">
+            <video class="video" playsinline autoplay muted loop poster="theme/avenex/assets/images/media/what-media.png">
+               <source src="theme/avenex/assets/static/video/usdt-video.mp4" type="video/mp4">
+            </video>
+         </div>
+         <div class="desc">
+            <p class="up-title">what you waiting for?</p>
+            <h2 class="title">Launch your own <span>crypto reactor</span></h2>
+         </div>
+      </div>
+      <div class="cta-row">
+	     		 <a href="user.html" class="base-cta filled-cta shadow-cta"><span>Account</span></a>
+		       </div>
+   </div>
+</section>
+
+<footer class="footer">
+   <div class="footer-decor"></div>
+   <div class="footer_content">
+      <div class="logo-block">
+         <a href="index.html" class="logo">
+            <picture class="media">
+               <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/images/shinex.png" alt="media">
+            </picture>
+         </a>
+         <span class="logo-text">Your Personal Crypto Reactor</span>
+      </div>
+      <div class="footer-nav">
+         <div class="col">
+            <h3 class="title">MAIN MENU</h3>
+            <div class="list">
+               <a href="index.html" class="nav-link">MAINPAGE</a>
+               <a href="about.html" class="nav-link">ABOUT Stackle</a>
+               <a href="investor.html" class="nav-link">FOR INVESTORS</a>
+               <a href="partners.html" class="nav-link">FOR PARTNERS</a>
+               <a href="faq.html" class="nav-link">FAQ</a>
+               <!-- <a href="sup.html" class="nav-link">FEEDBACK</a> -->
+            </div>
+         </div>
+         <div class="col">
+            <h3 class="title">Legal documents</h3>
+            <div class="list">
+               <a href="policy.html" class="nav-link">Privacy policy</a>
+               <a href="terms.html" class="nav-link">User agreement</a>
+            </div>
+         </div>
+         <!-- <div class="col">
+            <h3 class="title">Social Networks</h3>
+            <div class="list-soc">
+               <a href="https://t.me/+SzrXsYr2XWViYjBk" class="soc-link">
+               <i class="icon-telegram"></i>
+               Telegram Channel
+               </a>
+            </div>
+         </div> -->
+      </div>
+      <div class="button-block">
+         			   <a href="user.html" class="base-cta outline-cta-light"><span>Account</span></a>
+			         </div>
+      <div class="info-block">
+         <span class="date">All rights reserved. © 2024</span>
+      </div>
+      <div class="media-footer">
+         <picture class="media">
+            <img loading="lazy" class="lazy-img" src="" data-src="theme/avenex/assets/images/media/media-footer.png" alt="media">
+         </picture>
+      </div>
+   </div>
+</footer>
+</div>
+</div>
+<div class="overlay"></div>
+<!--End Language-->
+<div class="an_bar soc-bar">
+   <div class="list-soc">
+      <a href="https://t.me/+SzrXsYr2XWViYjBk" class="soc-link">
+      <i class="icon-telegram"></i>
+      Telegram
+      </a>
+	 <!--  <a href="https://www.youtube.com/@Stackle-LTD" class="soc-link" target="_blank">
+      <img src="theme/avenex/assets/images/youtube.png">
+      YouTube
+      </a> -->
+   </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+<script src="theme/avenex/assets/js/gsap.min.js" defer="defer"></script>
+<script src="theme/avenex/assets/js/ScrollTrigger.min.js" defer="defer"></script>
+<script src="theme/avenex/assets/js/ScrollSmoother.min.js" defer="defer"></script>
+<script src="theme/avenex/assets/js/app.js" defer="defer"></script>
+<script src="theme/avenex/assets/js/animation.js" defer="defer"></script>
+<script src="theme/avenex/assets/js/lazy-media.js" defer="defer"></script>
+<!-- HelloPreload -->
+<div id="preloader">
+   <div class="pre-content">
+      <div class="block">
+         <img class="logo" src="theme/avenex/assets/images/shinex.png" alt="logo">
+         <span class="loading">Loading . . .</span>
+      </div>
+      <div class="pre-progress">
+         <div class="progress" id="progress"></div>
+      </div>
+   </div>
+</div>
+<!-- HelloPreload -->
+</body>
+</html>
